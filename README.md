@@ -18,7 +18,12 @@ My lane detection pipeline consists of the following steps:
 1. Warp the detected lane boundaries back onto the original image.
 1. Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
+My project includes the following files:
 
+`README.ipynb` is the cleaned up version of my code  
+`report.ipynb`,`test.ipynb` are the notebook I used for testing  
+`utils.py` includes some utility functions  
+  
 ### Computing camera calibration matrix
 Using the chess borad images in the *camera_cal/* folder and the calibrateCamera function from opencv, we could get the following calibration matrix:  
 
