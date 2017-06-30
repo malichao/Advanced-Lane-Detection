@@ -197,3 +197,12 @@ print(r_line.mean_diff())
 ```
 
 ![png](docs/output_16_4.png)
+
+## Conclusion
+The project video shows that my pipeline works well in normal conditions. However, further test on the challenge videos shows some drawbacks.
+
+1. I used a moving average filter to smooth the polynomial. The filter assumes that previous detection is correct and add in the new detection slowly. However, in some cases where the initial detection is not good enough or the detection is very noisy, then the polynomial starts to wiggle like jelly.
+
+2. The lane finding algorithm will fail if the road is too windy and the car is driving very fast. This might be fixed by increasing the search margin and window size at the cost of more compuation.
+
+3. The lane finding algorithm doesn't handle the traffic participants, such as other cars or motorcyclist. This might be improved by using the history of previous detection.
