@@ -6,7 +6,7 @@ The goal of this project is to write a software pipeline to identify the lane bo
 
 ![gif](docs/project_video.gif)
 
-Check out the full video [here](https://youtu.be/3sb0Y0SO-DQ).
+Check out the full video [here](https://youtu.be/0kafki7UnTk).
 
 My lane detection pipeline consists of the following steps:
 1. Compute camera calibration matrix and distortion coefficients.
